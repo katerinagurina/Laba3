@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>laba3</title>
+        <link href="1.css" rel='stylesheet' type="text/css"/>
+        <meta charset="utf-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script  src="js/minescript.js"></script>
+        <style>
+            body{
+            background: url('./2.png') no-repeat #dedede
+        }
+        li:hover {
+            text-decoration: none; /* Убираем подчеркивание */
+            color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */  
+            background: #e24486; /* Цвет фона */
+        }
+        </style>
+    </head>
+    <body>
+        <h1 align="center" style="color:#ff9999">Ваш прогноз погоды</h1>
+        <legend></legend>
+        <form class="form-inline" align="center" >
+            <label>Где нужно узнать прогноз погоды?</label>
+            <input class="input-medium",class="form-control" rows="1" cols="50" id="txt"  placeholder="Название города"></input>
+            <input value="Узнать" onclick="aja()" type="button">
+        </form>
+        <div id="menu" align="center">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3" id='resp'>
+                    <p class="location"></p>
+                    <div id="city"  style="height: 50px;margin-left: 100px;margin-top: 50px"></div>
+                    <div id="temp"  style="height: 50px;margin-left: 100px"></div>
+                    <div id="pressure"  style="height: 50px;margin-left: 100px"></div>
+                    <div id="humidity"  style="height: 50px;margin-left: 100px"></div>
+                    <div id="speedwind" style="height: 50px;margin-left: 100px"></div>
+                </div>
+                <div class="col-lg-4" id="2" style="margin-top: 30px">
+                </div>
+                <div class="col-lg-5" id="3" style="margin-top: 30px">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
